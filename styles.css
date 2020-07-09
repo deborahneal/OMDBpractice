@@ -1,4 +1,29 @@
 body{
     background-color: sienna;
-    background-image: url(https://images.unsplash.com/photo-1593834762831-af1903a93a11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+    background-image: url()
+    
+}
+
+
+.container{
+    color: transparent;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.poster{
+    border: 2px black;
+}
+
+.button{
+    background-color: cornsilk;
+    border: 1px solid black;
+    border-radius: 2%;
+    min-height: 20px;
+    min-width: 20%;
+    cursor: pointer;
+}
+
+.input{
+    background-color: black;
 }

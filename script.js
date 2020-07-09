@@ -1,12 +1,15 @@
 console.log('hit');
 let body = document.querySelector('body');
 let container = document.querySelector('.container');
-let search = 'notebook'
+let input = document.querySelector('.search');
+let search = document.querySelector('button');
+
+search.addEventListener('click', getData)
 
 //let movie = 'notebook'
-let getData = () => {
-    
-    fetch(`https://www.omdbapi.com/?s=${search}&apikey=91089252`)
+function getData (){
+    let info = input.value;
+    fetch(`https://www.omdbapi.com/?s=${info}&apikey=91089252`)
     .then(response =>{
         return response.json();
     })
@@ -33,7 +36,16 @@ function createCards(movies){
         let poster = document.createElement('img');
         poster.setAttribute('src', movies[i].Poster);
         container.appendChild(poster);
+
+        let actors = document.createElement('actors');
+        actors.innerHTML = movies[i].Actors;
+        console.log(movies[i]);
+        container.appendChild(actors);
+
+        let year = document.createElement('year');
+        container.appendChild(year);
+        year.innerHTML = movies[i].Year;
     }
 }
-getData();
+
 
