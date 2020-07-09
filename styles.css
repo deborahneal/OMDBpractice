@@ -1,29 +1,61 @@
+/* *{
+    border: 1px solid black;
+} */
+
 body{
     background-color: sienna;
-    background-image: url()
+    color: black;
+    background-image: url();
+    padding-top: 40px;
+    /* display: flex; */
+    /* justify-content: center; */
     
 }
+Exelsior-TV{
+    background-color: sandybrown;
+}
 
-
-.container{
-    color: transparent;
-    border: 3px solid black;
+.container-movies{
+    background-color: lightslategrey;
+    border: 2px solid sienna;
+    border-radius: 2%;
+    background-image: url(https://picfiles.alphacoders.com/263/263889.jpg);
     display: flex;
     flex-direction: row;
+    overflow-x: scroll;
+    margin-top: 25px;
 }
-.poster{
-    border: 2px black;
+
+.container-search{
+    color: lightcoral;
+    /* border: 1px solid red; */
+    display: flex;  
+    justify-content: center;
+
 }
 
 .button{
     background-color: cornsilk;
     border: 1px solid black;
-    border-radius: 2%;
-    min-height: 20px;
-    min-width: 20%;
+    border-radius: 5%;
+    min-height: 15px;
+    min-width: 8%;
     cursor: pointer;
 }
-
-.input{
-    background-color: black;
+h1{
+    color: linen;
+}
+year{
+    color: lightsalmon;
+    font-style: italic;
+    font-size: larger;
+    font-weight: 600;
+}
+img{
+    border:1px solid red;
+    border-radius: 5%;
+}
+img:hover{
+    border: 7px solid red;
+    border-radius: 5%;
 }
